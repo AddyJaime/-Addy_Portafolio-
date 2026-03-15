@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import type { Section } from "@/lib/data";
-import { Github, Linkedin, Mail, Terminal } from "lucide-react";
+import { Github, Linkedin, Mail, } from "lucide-react";
 
 const navItems = [
   { id: "projects", label: "Projects" },
@@ -80,7 +80,7 @@ export function IdentityPanel({ onNavigate }: IdentityPanelProps) {
           </div>
 
           {/* NAME */}
-          <h1 className="text-5xl font-bold tracking-tight text-sidebar-foreground text-glow">
+          <h1 className="text-5xl font-bold tracking-tight text-sidebar-foreground ">
             Addy Jaime
           </h1>
 
@@ -89,12 +89,10 @@ export function IdentityPanel({ onNavigate }: IdentityPanelProps) {
             <h2 className="text-2xl font-semibold text-primary">
               DevOps Engineer
             </h2>
-
-            <p className="text-lg text-primary/80">Backend & Infrastructure</p>
           </div>
 
           {/* DESCRIPTION */}
-          <p className="max-w-md text-base leading-relaxed text-muted-foreground">
+          <p className="max-w-md text-base leading-relaxed  text-sidebar-foreground text-glow">
             Backend and DevOps engineer focused on building scalable systems,
             automating infrastructure, and making applications run smoothly in
             production.

@@ -6,6 +6,8 @@ import { ProjectsSection } from "@/components/projects-section"
 import { ContactSection } from "@/components/contact-section"
 import type { Section } from "@/lib/data"
 
+
+
 export function Portfolio() {
   const scrollRef = useRef<HTMLDivElement>(null)
 
@@ -19,7 +21,7 @@ export function Portfolio() {
   return (
     <div className="flex h-screen bg-background bg-dot-grid">
       {/* Left sticky identity panel */}
-      <aside className="hidden lg:flex lg:w-[420px] xl:w-[480px] shrink-0 h-screen sticky top-0">
+      <aside className="hidden lg:flex lg:w-105 xl:w-120 shrink-0 h-screen sticky top-0">
         <IdentityPanel onNavigate={scrollTo} />
       </aside>
 

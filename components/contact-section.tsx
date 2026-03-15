@@ -46,7 +46,7 @@ export function ContactSection() {
           Contact
         </p>
 
-        <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground">
+        <h2 className="mt-3 text-3xl font-bold text-sidebar-foreground text-glow">
           Get In Touch
         </h2>
 
@@ -56,7 +56,7 @@ export function ContactSection() {
       </div>
 
       {/* Contact cards */}
-      <div className="flex flex-col gap-4 max-w-lg">
+      <div className="flex flex-col gap-4">
 
         {/* Email card */}
         <div className="group rounded-lg border border-border/60 bg-card/50 p-5 transition-all duration-300 glow-border-hover">
