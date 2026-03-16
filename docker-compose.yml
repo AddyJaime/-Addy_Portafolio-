@@ -1,0 +1,20 @@
+# Aquí definimos los contenedores que correrán en nuestra aplicación
+services:
+
+  # Nombre del servicio (también será el nombre de la red interna)
+  portfolio:
+
+    # Construye la imagen usando el Dockerfile en el directorio actual
+    # Docker ejecutará las instrucciones del Dockerfile para crear la imagen
+    build: .
+
+    # Nombre fijo del contenedor (si no lo ponemos Docker crea uno automático)
+    container_name: portfolio
+
+    # Si el contenedor se cae o el servidor se reinicia, Docker lo levantará otra vez
+    # Esto es importante para producción
+    restart: always
+
+    # Mapeo de puertos
+    ports:
+      - "3001:3000"
