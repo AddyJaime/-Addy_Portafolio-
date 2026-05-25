@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Addy Jaime | DevOps Engineer",
   description:
     "DevOps Engineer focused on infrastructure, automation, and scalable backend systems.",
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export const viewport: Viewport = {
